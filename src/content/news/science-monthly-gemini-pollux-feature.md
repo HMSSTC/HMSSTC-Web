@@ -2,7 +2,7 @@
 title: "🚀 我們登上《科學月刊》啦！"
 date: "2026-10-20"
 excerpt: "本中心自製立方衛星「雙子星—波魯克斯」（Gemini–Pollux）獲《科學月刊》2026 年 10 月號第 682 期專訪報導，分享任務成果、臺灣太空科技與人才培育。"
-image: "../images/news/gemini-pollux-launch-sat.jpg"
+image: "../images/news/science-monthly-gemini-pollux-cover.jpg"
 category: "news"
 ---
 

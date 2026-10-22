@@ -2,7 +2,7 @@
 title: "🚀 We’re Featured in Science Monthly!"
 date: "2026-10-20"
 excerpt: "Our center-developed Gemini–Pollux CubeSat is featured in the October 2026 issue of Science Monthly, highlighting the mission, Taiwan’s space technology, and talent development."
-image: "../images/news/gemini-pollux-launch-sat.jpg"
+image: "../images/news/science-monthly-gemini-pollux-cover.jpg"
 category: "news"
 ---
 
