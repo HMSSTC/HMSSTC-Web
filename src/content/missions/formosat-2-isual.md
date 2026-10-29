@@ -5,7 +5,7 @@ endDate: "2017"
 status: "retired"
 image: "../images/missions/formosat-2-isual.jpg"
 excerpt: "ISUAL（Ionospheric and Atmospheric Lightning Activity）是福爾摩沙衛星二號上的重要科學酬載，致力於研究高層大氣的閃電及電離層現象。"
-order: 3
+order: 5
 ---
 
 ## 福爾摩沙衛星二號 ISUAL 任務

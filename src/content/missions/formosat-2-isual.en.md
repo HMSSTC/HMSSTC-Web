@@ -5,7 +5,7 @@ endDate: "2017"
 status: "retired"
 image: "../images/missions/formosat-2-isual.jpg"
 excerpt: "ISUAL (Ionospheric and Atmospheric Lightning Activity) was a key scientific payload aboard FORMOSAT-2, dedicated to studying lightning and ionospheric phenomena in the upper atmosphere."
-order: 3
+order: 5
 ---
 
 ## FORMOSAT-2 ISUAL Mission

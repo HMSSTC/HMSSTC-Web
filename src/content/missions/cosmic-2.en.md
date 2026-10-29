@@ -4,7 +4,7 @@ date: "2025-08-13"
 status: "active"
 image: "../images/missions/cosmic-2.jpg"
 excerpt: "FORMOSAT-7/COSMIC-2 is a Taiwan-U.S. weather satellite constellation that provides critical data for global weather forecasting."
-order: 3
+order: 4
 ---
 
 ## FORMOSAT-7 (COSMIC-2)
