@@ -3,14 +3,17 @@ const navItems = [
   { label: "最新消息", href: "/news", i18nKey: "nav.news" },
   { label: "關於中心", href: "/about", i18nKey: "nav.about" },
   { label: "太空任務", href: "/missions", i18nKey: "nav.missions" },
-  { label: "活動花絮", href: "/activities", i18nKey: "nav.activities" },
-  { label: "活動相簿", href: "/gallery", i18nKey: "nav.gallery" },
+  { label: "活動花絮", href: "/activities", i18nKey: "nav.activities", activePaths: ["/activities", "/gallery"] },
   { label: "聯絡我們", href: "/contact", i18nKey: "nav.contact" },
 ];
 
 const { transparent = false } = Astro.props;
 
 const currentPath = Astro.url.pathname;
+const isNavActive = (item: (typeof navItems)[number]) =>
+  ("activePaths" in item ? item.activePaths : [item.href]).some((path) =>
+    currentPath.startsWith(path),
+  );
 ---
 
 <header
@@ -34,7 +37,7 @@ const currentPath = Astro.url.pathname;
                 href={item.href}
                 data-i18n={item.i18nKey}
                 class={`text-sm font-medium tracking-wide transition-colors duration-200 hover:text-tech-blue-light whitespace-nowrap ${
-                  currentPath.startsWith(item.href)
+                  isNavActive(item)
                     ? "text-tech-blue-light"
                     : "text-gray-300"
                 }`}
@@ -88,7 +91,7 @@ const currentPath = Astro.url.pathname;
             href={item.href}
             data-i18n={item.i18nKey}
             class={`mobile-nav-item group flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-medium tracking-wide transition-all duration-200 ${
-              currentPath.startsWith(item.href)
+              isNavActive(item)
                 ? "text-tech-blue-light bg-tech-blue/10"
                 : "text-gray-300 hover:text-white hover:bg-white/5"
             }`}
@@ -96,7 +99,7 @@ const currentPath = Astro.url.pathname;
           >
             <span
               class={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
-                currentPath.startsWith(item.href)
+                isNavActive(item)
                   ? "bg-tech-blue-light scale-100"
                   : "bg-gray-600 scale-75 group-hover:bg-white group-hover:scale-100"
               }`}

@@ -35,7 +35,7 @@ const totalPhotos = folders
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 flex-shrink-0">
           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
         </svg>
-        <a href="/gallery" class="hover:text-tech-blue transition-colors" data-i18n="gallery.breadcrumbGallery">相簿</a>
+        <a href="/activities#albums" class="hover:text-tech-blue transition-colors" data-i18n="activitiesPage.breadcrumbActivities">活動花絮</a>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 flex-shrink-0">
           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
         </svg>
@@ -78,7 +78,7 @@ const totalPhotos = folders
           </div>
           <a
             id="header-back-btn"
-            href="/gallery"
+            href="/activities#albums"
             data-album-zh={title}
             data-album-en={titleEn ?? title}
             class="inline-flex items-center gap-2 text-gray-500 hover:text-tech-blue transition-colors text-sm flex-shrink-0 mt-1"
@@ -86,7 +86,7 @@ const totalPhotos = folders
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
             </svg>
-            <span id="header-back-btn-text" data-i18n="gallery.backToGallery">返回相簿列表</span>
+            <span id="header-back-btn-text" data-i18n="activitiesPage.backToActivities">返回活動花絮</span>
           </a>
         </div>
       </div>
@@ -167,10 +167,10 @@ const totalPhotos = folders
       backBtn.removeAttribute("href");
       backBtn.style.cursor = "pointer";
     } else {
-      backBtnText.setAttribute("data-i18n", "gallery.backToGallery");
+      backBtnText.setAttribute("data-i18n", "activitiesPage.backToActivities");
       const lang = getLang();
-      backBtnText.textContent = lang === "en" ? "Back to Gallery" : "返回相簿列表";
-      backBtn.setAttribute("href", "/gallery");
+      backBtnText.textContent = lang === "en" ? "Back to Activities" : "返回活動花絮";
+      backBtn.setAttribute("href", "/activities#albums");
       backBtn.style.cursor = "";
     }
   }
